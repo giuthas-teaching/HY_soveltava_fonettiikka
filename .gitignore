@@ -3,8 +3,8 @@ palkka/
 template/
 
 # the result files
-luento1/HY_luento1.pdf
-luento1/HY_luento2.pdf
+luento1/HY_*_luento1.pdf
+luento2/HY_*_luento2.pdf
 
 # MacOS things
 *DS_Store
@@ -285,3 +285,6 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# Emacs
+*.tex~
