@@ -1,0 +1,3 @@
+[submodule "luento2/bib"]
+	path = luento2/bib
+	url = https://github.com/giuthas/bib
