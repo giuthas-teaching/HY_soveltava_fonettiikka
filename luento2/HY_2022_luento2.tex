@@ -64,7 +64,8 @@
 
 \frame{\frametitle{2. UltraLuento: Ultraäänellä tallennetun puhemateriaalin analyysi}
   \begin{itemize}
-  \item Osa I: Analyysimenetelmiä
+    \item Osa I: Data- ja analyysiesimerkkejä
+    \item Osa II: Analyysimenetelmiä
     \begin{itemize}
     \item Audio -- siis tavallinen ääni
     \item Artikulatorinen data
@@ -76,8 +77,87 @@
     \item Splinit: Tuottaminen ja analyysi
     \item Laskennalliset metriikat
     \end{itemize}
-  \item Osa II: Data- ja analyysiesimerkkejä
   \end{itemize}
+}
+
+\frame{
+  \centering
+  {
+    \vfill
+    \bf \Large 
+    \usebeamercolor[fg]{title}
+    Data- ja analyysiesimerkkejä
+    \vfill
+  }
+}
+
+% \item Tommi Nieminen \& Pertti Palo: Suomen \v{s}vaan artikulaatio.
+% \begin{itemize}
+% \item Aineistossa suomen lauseita epenteettisellä vokaalilla ja
+%   ilman.
+% \item Pieni pilottiaineisto: Yksi epäluotettava puhuja.
+% \item Hyvä aika- ja paikkaresoluutio, kuvat selkeitä.
+% \end{itemize}
+
+\frame{\frametitle{Mitä dataa katsomme?}
+
+  \begin{itemize}
+    \item Jalal Al-Tamimi \& Pertti Palo (forthcoming): ``Tongue
+    contours in guttural consonants in Levantine Arabic: A Generalised
+    Additive Modelling Approach''
+    \begin{itemize}
+    \item Aineistossa levantin arabinkielisiä sanoja.
+    \item Laaja julkaisuihin tähtäävä aineisto: Puhujia kaikkiaan 10.
+    \item Hyvä aikaresoluutio, paikkaresoluutio heikompi. Kuvat
+      vähemmän selkeitä.
+    \end{itemize}
+  \item Pertti Palo \& Sonja Dahlgren: Suomenkielen koartikulaatiotyypin pilotti.
+    \begin{itemize}
+    \item Aineistossa suomen sanoja ja epäsanoja.
+    \item Julkaistavissa oleva pilottiaineisto: Kaksi luotettavaa puhujaa.
+    \item Hyvä aika- ja paikkaresoluutio, kuvat kohtuullisen selkeitä.
+    \end{itemize}
+  \item Pertti Palo: Puhunnosten alkujen ajoitusta - väitöskirjadataa.
+    \begin{itemize}
+    \item Aineistossa suomen fonotaksinmukaisia CV tavuja.
+    \item Julkaistu väitöskirjan apudata.
+    \item Erinomainen aika- ja paikkaresoluutio, kuvat selkeitä.
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{\frametitle{Analyysiesimerkki koartikulaatiodatasta}
+
+  \begin{itemize}
+  \item Segmentoidaan audio.
+  \item Valitaan mielenkiintoiset kohdat.
+  \item Splinitetään mielenkiintoiset kohdat.
+  \item Korjataan splinit käsin.
+  \item Lopuksi tehtäisiin AAA:ssa/R:ssä/Pythonilla splinianalyysia,
+    mutta ei mennä niin pitkälle tänään.
+  \end{itemize}
+}
+
+\frame{
+  \centering
+  {
+    \vfill
+    \bf \Large 
+    \usebeamercolor[fg]{title}
+    Lyhyt tauko (5 min)
+    \vfill
+  }
+}
+
+\frame{
+  \centering
+  {
+    \vfill
+    \bf \Large 
+    \usebeamercolor[fg]{title}
+    Analyysimenetelmiä
+    \vfill
+  }
 }
 
 \frame{\frametitle{Audio}
@@ -218,69 +298,6 @@
     \vfill
     \bf \Large 
     \usebeamercolor[fg]{title}
-    Lyhyt tauko (5 min)
-    \vfill
-  }
-}
-
-\frame{
-  \centering
-  {
-    \vfill
-    \bf \Large 
-    \usebeamercolor[fg]{title}
-    Data- ja analyysiesimerkkejä
-    \vfill
-  }
-}
-
-\frame{\frametitle{Mitä dataa katsomme?}
-
-  \begin{itemize}
-  \item Tommi Nieminen \& Pertti Palo: Suomen \v{s}vaan artikulaatio.
-    \begin{itemize}
-    \item Aineistossa suomen lauseita epenteettisellä vokaalilla ja
-      ilman.
-    \item Pieni pilottiaineisto: Yksi epäluotettava puhuja.
-    \item Hyvä aika- ja paikkaresoluutio, kuvat selkeitä.
-    \end{itemize}
-  \item Pertti Palo \& Sonja Dahlgren: Suomenkielen koartikulaatiotyypin pilotti.
-    \begin{itemize}
-    \item Aineistossa suomen sanoja ja epäsanoja.
-    \item Julkaistavissa oleva pilottiaineisto: Kaksi luotettavaa puhujaa.
-    \item Hyvä aika- ja paikkaresoluutio, kuvat kohtuullisen selkeitä.
-    \end{itemize}
-  \item Jalal Al-Tamimi \& Pertti Palo (forthcoming): ``Tongue
-    contours in guttural consonants in Levantine Arabic: A Generalised
-    Additive Modelling Approach''
-    \begin{itemize}
-    \item Aineistossa levantin arabinkielisiä sanoja.
-    \item Laaja julkaisuihin tähtäävä aineisto: Puhujia kaikkiaan 10.
-    \item Hyvä aikaresoluutio, paikkaresoluutio heikompi. Kuvat
-      vähemmän selkeitä.
-    \end{itemize}
-  \end{itemize}
-}
-
-\frame{\frametitle{Analyysiesimerkki koartikulaatiodatasta}
-
-  \begin{itemize}
-  \item Segmentoidaan audio.
-  \item Valitaan mielenkiintoiset kohdat.
-  \item Splinitetään mielenkiintoiset kohdat.
-  \item Korjataan splinit käsin.
-  \item Lopuksi tehtäisiin AAA:ssa/R:ssä/Pythonilla splinianalyysia,
-    mutta ei mennä niin pitkälle tänään.
-  \end{itemize}
-}
-
-
-\frame{
-  \centering
-  {
-    \vfill
-    \bf \Large 
-    \usebeamercolor[fg]{title}
     Kyselkää
     \vfill
   }
@@ -288,7 +305,7 @@
 
 
 \frame{\frametitle{Kirjallisuutta ja kiitokset}
-  \nocite{AlTamimi:TCG:2022,Dahlgren:SLS:2022}
+  \nocite{AlTamimi:TCG:2022,Dahlgren:SLS:2022,Palo:MPS:2019}
   
   \begin{itemize}
   \item Steve Cowen: AAA:n käyttöapu ja kuva minusta.
