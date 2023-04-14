@@ -33,7 +33,7 @@
 
 
 \begin{document}
-\title{Kieliultraäänidatan analyysimenetelmiä\\
+\title{Kieliultraääniprojekteja ja analyysimenetelmiä\\
   a.k.a. UltraLuento 2.
 } 
 \author{Pertti Palo} 
@@ -62,10 +62,18 @@
   Onko uusia tai vanhoja kysymyksiä?
 }
 
-\frame{\frametitle{2. UltraLuento: Ultraäänellä tallennetun puhemateriaalin analyysi}
-  \begin{itemize}
-    \item Osa I: Data- ja analyysiesimerkkejä
-    \item Osa II: Analyysimenetelmiä
+\frame{\frametitle{2. UltraLuento: Ultraäänellä tallennetun puhemateriaali ja analyysi}
+
+\begin{itemize}
+    \item Osa I: Projekti- ja analyysiesimerkkejä
+    \begin{itemize}
+      \item Kliinistä tutkimusta
+      \item Koartikulaatiota: kielen pinta ja splinit
+      \item Arabian konsonantteja: muutoksen vertaaminen ajassa
+      \item Kurkunpään ultraa: monimutkaisten liikkeiden analyysi
+      \item Äänettömän artkulaation tarkastelua: kokonaismuutosta
+    \end{itemize}
+    \item Osa II: Lisää analyysimenetelmiä
     \begin{itemize}
     \item Audio -- siis tavallinen ääni
     \item Artikulatorinen data
@@ -74,10 +82,15 @@
       \item Kurkunpään ultraääni
       \item Huulivideot
       \end{itemize}
-    \item Splinit: Tuottaminen ja analyysi
     \item Laskennalliset metriikat
     \end{itemize}
   \end{itemize}
+}
+
+\frame{\frametitle{Kieliultraääni ja anatomia}
+  \centering
+  \includegraphics[width=.49\textwidth]{figures/DA_and_P1_overlay.jpg}
+  \includegraphics[width=.49\textwidth]{figures/DA_and_P1_overlay_3.jpg}
 }
 
 \frame{
@@ -86,7 +99,7 @@
     \vfill
     \bf \Large 
     \usebeamercolor[fg]{title}
-    Data- ja analyysiesimerkkejä
+    Projekti- ja tutkimuskohde-esimerkkejä
     \vfill
   }
 }
@@ -99,7 +112,90 @@
 % \item Hyvä aika- ja paikkaresoluutio, kuvat selkeitä.
 % \end{itemize}
 
-\frame{\frametitle{Mitä dataa katsomme?}
+\frame{\frametitle{Esimerkkiprojekti 1: Kliininen tutkimus}
+  
+\begin{itemize}
+  \item Joanne Cleland \& al. - University of Strathclyde
+  \begin{itemize}
+    \item Kliinistä dataa kitahalkiopotilaiden post-operatiivisista
+    kuntoutuskäynneistä.
+    \item Tuloksia julkaistu eri muodoissa, mutta raakadata on suljettua.
+    \item Hyvä aika- ja paikkaresoluutio, kuvien laatu vaihtelee paljon riippuen
+    potilaan iästä ja muista tekijöistä.
+    \item Lisähaasteena laitevian takia puuttuva synkroni ultraäänidatan ja
+    audion välillä.
+    \item Analyysi oli kuitenkin mahdollista valitsemalla videon perusteella
+    maksimaaliset konsonanttiartikulaatiot analysoitavaksi.
+    \item Lisäksi audion kohdistus ilmeisesti onnistui myös neuroverkkojen
+    avulla myöhemmin.
+    \end{itemize}
+\end{itemize}
+}
+
+\frame{\frametitle{Esimerkkiprojekti 2: Koartikulaatiotutkimusta}
+
+\begin{itemize}
+\item Sonja Dahlgren, Pertti Palo \& Minnaleena Toivola: Kielten
+koartikulaatiotyyppien kartoitusta.
+  \begin{itemize}
+  \item Aineistossa kielestä riippuen sanoja ja epäsanoja.
+  \item Sekä muiden dataa että uutta .
+  \item Hyvä aika- ja paikkaresoluutio, kuvat kohtuullisen selkeitä.
+  \end{itemize}
+\item Projektin tarkoitus on louda luokittelujärjestelmä eri kielten
+koartikulaatiotavoille eli kuvata kuinka vokaalit ja konsonantit yhteistuotetaan
+osana puhevirtaa.
+\item Tähän aiheeseen erinomainen menetelmä on katsoa kielen pinnan asentoa
+erottamalla se ultraäänikuvista splineillä. 
+\end{itemize}
+}
+
+\frame{\frametitle{Splinit I}
+  \hspace*{-.5cm}
+  \centering
+  \includegraphics[width=1.05\textwidth]{P2_lemon_1st_frame_spline.pdf}
+  \hspace*{.5cm}
+  \begin{itemize}
+  \item Splinin sovitus ultraäänikuvaan tarkoittaa, että piirrämme kielen pinnan
+    mukaisen käyrän ultraäänikuvaan - tai oikeastaan asetamme splinin
+    ohjauspisteet niin että splini asettuu kielen pinnan kohdalle.
+  \item Sovitus voidaan tehdä joko manuaalisesti tai automaattisesti.
+  \item Nykyisin automaattinen menetelmä on taitavan ihmisen tasolla useimmissa
+  aineistoissa.
+  \item Automaattista tulosta voidaan myös korjata manuaalisesti.
+  \end{itemize}
+}
+
+\frame{\frametitle{Splinit II}
+
+\begin{itemize}
+  \item Tulokset riippuvat paljon datan laadusta:
+  \begin{itemize}
+    \item Parempi paikkaresoluutio auttaa, mutta ei takaa, sovittamisen
+    onnistumista.
+    \item Selkeisiin kuviin on helpompi sovittaa splini.
+  \end{itemize}
+  \item Splinit itsessään voivat olla analyysin tulos ja niitä voidaan
+  verrata toisiinsa silmämääräisesti.
+  
+\end{itemize}
+}
+
+\frame{\frametitle{Esimerkkiprojekti 2: Koartikulaatiotutkimusta}
+
+\begin{center}
+  \hspace*{-.85cm}
+  \includegraphics[width=1.15\textwidth]{figures/greek_vs_finnish_vs_italian_vs_gam.drawio.png}
+\end{center}
+
+\begin{itemize}
+\item Tässä on hyvä esimerkki siitä miten pääefekti voi olla näkyvissä suoraan
+pienessäkin datassa.
+\end{itemize}
+}
+
+
+\frame{\frametitle{Esimerkkiprojekti 3: Arabian konsonantteja}
 
   \begin{itemize}
     \item Jalal Al-Tamimi \& Pertti Palo (forthcoming): ``Tongue
@@ -111,31 +207,20 @@
     \item Hyvä aikaresoluutio, paikkaresoluutio heikompi. Kuvat
       vähemmän selkeitä.
     \end{itemize}
-  \item Pertti Palo \& Sonja Dahlgren: Suomenkielen koartikulaatiotyypin pilotti.
-    \begin{itemize}
-    \item Aineistossa suomen sanoja ja epäsanoja.
-    \item Julkaistavissa oleva pilottiaineisto: Kaksi luotettavaa puhujaa.
-    \item Hyvä aika- ja paikkaresoluutio, kuvat kohtuullisen selkeitä.
-    \end{itemize}
-  \item Pertti Palo: Puhunnosten alkujen ajoitusta - väitöskirjadataa.
-    \begin{itemize}
-    \item Aineistossa suomen fonotaksinmukaisia CV tavuja.
-    \item Julkaistu väitöskirjan apudata.
-    \item Erinomainen aika- ja paikkaresoluutio, kuvat selkeitä.
-    \end{itemize}
   \end{itemize}
-}
-
-\frame{\frametitle{Analyysiesimerkki koartikulaatiodatasta}
-
-  \begin{itemize}
-  \item Segmentoidaan audio.
-  \item Valitaan mielenkiintoiset kohdat.
-  \item Splinitetään mielenkiintoiset kohdat.
-  \item Korjataan splinit käsin.
-  \item Lopuksi tehtäisiin AAA:ssa/R:ssä/Pythonilla splinianalyysia,
-    mutta ei mennä niin pitkälle tänään.
-  \end{itemize}
+  }
+  
+\frame{\frametitle{Esimerkkiprojekti 3}
+  
+    \begin{itemize}
+      \item Alla analyysituloksia jotka esiteltiin ISSP 2020-konferenssisa. 
+      \item Kuvissa y-akseli on aika (alhaalta ylös), x-akseli on paikka
+      vasen-oikea = takana-edessä, ja vaalea väri tarkoittaa korkeampaa kielen
+      asentoa, punaisempi/tummempi matalempaa.    
+    \end{itemize}
+    \begin{center}
+      \includegraphics[width=.9\textwidth]{figures/jalal_2D_diff.png}
+    \end{center}
 }
 
 \frame{
@@ -148,6 +233,84 @@
     \vfill
   }
 }
+
+\frame{\frametitle{Esimerkkiprojekti 4: Kurkunpään liikkeitä}
+  
+  \begin{itemize}
+    \item Scott R. Moisik, Hua Lin and John H. Esling (2014). A
+    study of laryngeal gestures in Mandarin citation tones using simultaneous
+    laryngoscopy and laryngeal ultrasound (SLLUS) . Journal of the International
+    Phonetic Association, 44, pp 21-58 doi:10.1017/S0025100313000327
+    \item Vent = valeäänihuuli, VF = äänihuuli, AE = aryepiglottaalinen poimu, P = anturi.
+  \end{itemize}
+
+  \hspace*{-.5cm}
+  \begin{center}
+    \includegraphics[width=1\textwidth]{figures/larynx_probe_placement.png}
+  \end{center}
+}
+
+\frame{\frametitle{Kurkunpään ultraääni - anturivaihtoehtoja}
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{figures/fan_vs_linear.png}
+  \end{center}
+
+  \begin{itemize}
+    \item Samat rakenteet, erilainen anturi -> erilainen kuva.
+  \end{itemize}
+  {\scriptsize Kuvat: Moisik, S. R., Esling, J. H., Bird, S., \& Lin, H. (2011). Evaluating
+  laryngeal ultrasound to study larynx state and height. In W. S. Lee \& E. Zee
+  (Eds.), Proceedings of the 17th International Congress of Phonetic Sciences
+  (pp. 136 -- 139).}
+}
+
+\frame{\frametitle{Esimerkkiprojekti 4: Kurkunpään liikkeitä}
+  
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{figures/optic_flow.png}
+  \end{center}
+
+  \begin{itemize}
+    \item Moisik, S. R., Esling, J. H., Bird, S., \& Lin, H. (2011). Evaluating
+    laryngeal ultrasound to study larynx state and height. In W. S. Lee \& E.
+    Zee (Eds.), Proceedings of the 17th International Congress of Phonetic
+    Sciences (pp. 136 -- 139).
+  \end{itemize}
+
+  }
+
+
+\frame{\frametitle{Esimerkkiprojekti 5: Äänettömän artikulaation kartoitusta}
+
+  \begin{itemize}
+  \item Pertti Palo: Puhunnosten alkujen ajoitusta - väitöskirjadataa.
+    \begin{itemize}
+    \item Aineistossa skottienglannin leksikaalisia /CVC/-sanoja.
+    \item Väitöskirjan päädata.
+    \item Erinomainen aika- ja paikkaresoluutio, kuvat selkeitä.
+    \end{itemize}
+  \end{itemize}
+  }  
+
+\frame{\frametitle{Pikselietäisyys: Raakadata}
+  \hspace*{-.5cm}
+  \centering
+  \includegraphics[width=1.05\textwidth]{P2_lemon_1st_frame_fan_v2.jpg}
+}
+
+\frame{\frametitle{Pikselietäisyys: Miten laskenta tapahtuu?}
+  \hspace*{-.5cm}
+  \centering
+  \includegraphics[width=1.05\textwidth]{figures/pixel_difference_demo.pdf}
+}
+
+\frame{\frametitle{Pikselietäisyys: Missä liike alkaa?}
+  \hspace*{-.5cm}
+  \centering
+  \includegraphics[width=\textwidth]{PD_annotated.jpg}
+}
+
+
 
 \frame{
   \centering
@@ -207,53 +370,24 @@
   \end{itemize}
 }
 
-\frame{\frametitle{Splinit I}
-  \hspace*{-.5cm}
-  \centering
-  \includegraphics[width=1.05\textwidth]{P2_lemon_1st_frame_spline.pdf}
-  \hspace*{.5cm}
-  \begin{itemize}
-  \item Splinin sovitus ultraäänikuvaan tarkoittaa, että piirrämme
-    kielen pinnan mukaisen käyrän ultraäänikuvaan - tai oikeastaan
-    asetamme splinin ohjauspisteet kuvaan.
-  \item Sovitus voidaan tehdä joko manuaalisesti tai automaattisesti.
-  \item Automaattista tulosta voidaan myös korjata manuaalisesti.
-  \end{itemize}
-}
+% \frame{\frametitle{Splinit III: Lähempi esimerkki}
 
-\frame{\frametitle{Splinit II}
+% \hspace*{-.5cm}
+%   \centering
+%   \includegraphics[width=.7\textwidth]{uti_traced}
+% }
 
-\begin{itemize}
-  \item Tulokset riippuvat paljon datan laadusta:
-  \begin{itemize}
-  \item Selkeisiin kuviin on helpompi sovittaa splini.
-  \item Parempi paikkaresoluutio auttaa, mutta ei takaa, sovittamisen
-    onnistumista.
-  \end{itemize}
-  \item Splinit itsessään voivat olla analyysin tulos ja niitä voidaan
-  verrata toisiinsa silmämääräisesti.
+% \frame{\frametitle{Splinit IV: Analyysimenetelmiä}
+%   \hspace*{-.45cm}
+%   \centering
+%   \includegraphics[width=.8\textwidth]{uti_contours}
+%   \vfill
+%   Perinteinen menetelmä: Valitaan audiosegmentaation perusteella
+%   ajasta kaksi tai useampia mielenkiintoisia pisteitä ja verrataan
+%   splinien muotoa niissä.
+% }
   
-\end{itemize}
-}
-
-\frame{\frametitle{Splinit III: Lähempi esimerkki}
-
-\hspace*{-.5cm}
-  \centering
-  \includegraphics[width=.7\textwidth]{uti_traced}
-}
-
-\frame{\frametitle{Splinit IV: Analyysimenetelmiä}
-  \hspace*{-.45cm}
-  \centering
-  \includegraphics[width=.8\textwidth]{uti_contours}
-  \vfill
-  Perinteinen menetelmä: Valitaan audiosegmentaation perusteella
-  ajasta kaksi tai useampia mielenkiintoisia pisteitä ja verrataan
-  splinien muotoa niissä.
-}
-  
-\frame{\frametitle{Splinit V: Analyysimenetelmiä}
+\frame{\frametitle{Splinien analyysimenetelmiä}
 
   \hspace*{-.45cm}
   \centering
@@ -321,17 +455,19 @@
   }
 }
 
-\frame{\frametitle{Pikselietäisyys: Raakadata}
-  \hspace*{-.5cm}
-  \centering
-  \includegraphics[width=1.05\textwidth]{P2_lemon_1st_frame_fan_v2.jpg}
-}
 
-\frame{\frametitle{Pikselietäisyys: Missä liike alkaa?}
-  \hspace*{-.5cm}
-  \centering
-  \includegraphics[width=\textwidth]{PD_annotated.jpg}
-}
+% \frame{\frametitle{Analyysiesimerkki koartikulaatiodatasta}
+
+%   \begin{itemize}
+%   \item Segmentoidaan audio.
+%   \item Valitaan mielenkiintoiset kohdat.
+%   \item Splinitetään mielenkiintoiset kohdat.
+%   \item Korjataan splinit käsin.
+%   \item Lopuksi tehtäisiin AAA:ssa/R:ssä/Pythonilla splinianalyysia,
+%     mutta ei mennä niin pitkälle tänään.
+%   \end{itemize}
+% }
+
 
 \end{document}
 
