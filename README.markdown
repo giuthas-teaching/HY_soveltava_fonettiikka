@@ -3,13 +3,13 @@
 Kaksi luentoa ultraäänikuvantamisen käytöstä puheentutkimuksessa:
 
 - [1. Luento: toimintaperiaate ja puheen mittaaminen
-  (pdf)](https://github.com/giuthas/HY_soveltava_fonettiikka/blob/master/luento1/HY_2022_luento1.pdf)
+  (pdf)](https://github.com/giuthas/HY_soveltava_fonettiikka/blob/master/luento1/HY_ultra_luento1.pdf)
 - [2. Luento: puhemateriaalin analyysi
-  (pdf)](https://github.com/giuthas/HY_soveltava_fonettiikka/blob/master/luento2/HY_2022_luento2.pdf)
+  (pdf)](https://github.com/giuthas/HY_soveltava_fonettiikka/blob/master/luento2/HY_ultra_luento2.pdf)
 
 ## Copyright and License
 
-Copyright (C) 2022-2023 Pertti Palo.
+Copyright (C) 2022-2024 Pertti Palo.
 
 ### License
 
