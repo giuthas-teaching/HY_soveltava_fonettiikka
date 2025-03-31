@@ -9,7 +9,7 @@ Kaksi luentoa ultraäänikuvantamisen käytöstä puheentutkimuksessa:
 
 ## Copyright and License
 
-Copyright (C) 2022-2024 Pertti Palo.
+Copyright (C) 2022-2025 Pertti Palo.
 
 ### License
 
